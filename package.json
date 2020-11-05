@@ -1,0 +1,31 @@
+{
+  "name": "{project-name}",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerAPfledderer/{project-name}.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerAPfledderer/{project-name}/issues"
+  },
+  "homepage": "https://github.com/TylerAPfledderer/{project-name}#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss": "^8.1.6"
+  }
+}

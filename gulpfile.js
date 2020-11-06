@@ -12,12 +12,12 @@ function sassTask() {
   return src( "scss/**/*.scss" )
     .pipe(sourceMap.init())
     .pipe( sass().on( "error", sass.logError ) )
-    .pipe( purgeCSS({
-      content: ["index.html"]
-    }))
     .pipe( postcss([autoprefixer()]) )
     .pipe( concat("main.css") )
     .pipe(sourceMap.write("."))
+    // .pipe( purgeCSS({
+    //   content: ["index.html"]
+    // }))
     .pipe( dest(".") )
     .pipe( bs.reload({stream: true}) );
 }

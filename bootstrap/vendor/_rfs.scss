@@ -61,7 +61,7 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 }
 
 // Responsive font-size mixin
-@mixin rfs($fs, $important: false) {
+@mixin rfs($fs, $important: true) {
   // Cache $fs unit
   $fs-unit: if(type-of($fs) == "number", unit($fs), false);
 
@@ -195,8 +195,10 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 }
 
 // The font-size & responsive-font-size mixin uses RFS to rescale font sizes
-@mixin font-size($fs, $important: false) {
+@mixin font-size($fs, $important: true) {
   @include rfs($fs, $important);
+
+  @debug $fs;
 }
 
 @mixin responsive-font-size($fs, $important: false) {

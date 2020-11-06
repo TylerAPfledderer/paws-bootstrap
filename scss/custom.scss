@@ -11,6 +11,12 @@
 $brand-color: #ff99ad;
 $bg-color: #f8f8f8;
 
+input,
+textarea {
+  &:focus {
+    outline: $brand-color 1px auto;
+  }
+}
 
 
 .btn {
@@ -41,4 +47,19 @@ $bg-color: #f8f8f8;
       color: inherit;
     }
   }
+}
+
+.location-search {
+  outline: lighten($brand-color, 10%) 2px auto;
+
+  &:focus {
+    outline: $brand-color 4px auto;
+  }
+}
+
+.location-input-icn {
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  width: 20px;
 }

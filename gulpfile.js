@@ -1,23 +1,20 @@
 // Gulp Workflow specific to BootStrap builds requiring source code for custom adjustments
 const { src, watch, series, dest } = require("gulp");
 const purgeCSS = require("gulp-purgecss");
-const sass = require("gulp-dart-sass");
 const autoprefixer = require("autoprefixer");
-const postcss = require("gulp-postcss");
-const sourceMap = require("gulp-sourcemaps");
+const sass = require("gulp-dart-sass");
 const bs = require("browser-sync");
 const concat = require("gulp-concat");
+const postcss = require("gulp-postcss");
 
 function sassTask() {
   return src( "scss/**/*.scss" )
-    .pipe(sourceMap.init())
     .pipe( sass().on( "error", sass.logError ) )
-    .pipe( postcss([autoprefixer()]) )
     .pipe( concat("main.css") )
-    .pipe(sourceMap.write("."))
-    // .pipe( purgeCSS({
-    //   content: ["index.html"]
-    // }))
+    .pipe( postcss([autoprefixer("last 4 versions")]) )
+    .pipe( purgeCSS({
+      content: ["index.html"]
+    }))
     .pipe( dest(".") )
     .pipe( bs.reload({stream: true}) );
 }

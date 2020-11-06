@@ -9,7 +9,7 @@
 // Configuration
 
 // Base font size
-$rfs-base-font-size: 1.25rem !default;
+$rfs-base-font-size: 1rem !default;
 $rfs-font-size-unit: rem !default;
 
 // Breakpoint at where font-size starts decreasing if screen width is smaller
@@ -197,10 +197,8 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 // The font-size & responsive-font-size mixin uses RFS to rescale font sizes
 @mixin font-size($fs, $important: true) {
   @include rfs($fs, $important);
-
-  @debug $fs;
 }
 
-@mixin responsive-font-size($fs, $important: false) {
+@mixin responsive-font-size($fs, $important: true) {
   @include rfs($fs, $important);
 }

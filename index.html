@@ -27,10 +27,10 @@
       </nav>
     </header>
     <main>
-      <section id="about" class="d-flex flex-wrap justify-content-center border-top py-3 py-sm-6 px-sm-3">
-        <img class="w-75 h-100 mb-3 m-md-0" src="images/png/dogandcat.png"
+      <section id="about" class="row justify-content-center align-items-center border-top py-3 py-sm-6 px-sm-3">
+        <img class="col-6 col-md-5 w-75 h-100 mb-3 m-md-0" src="images/png/dogandcat.png"
           alt="A dog on two feet and a cat smiling" width="367" height="246">
-        <section class="about-info w-100">
+        <section class="col-md-7 pl-md-6">
           <h3 class="text-center text-md-left mb-4 text-capitalize">About Paws</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aut eius! Totam fugit voluptatum
             fugiat saepe, quia aliquam maxime reprehenderit eos illum ullam cum quis nemo sint perferendis consectetur
@@ -39,9 +39,9 @@
             enim.</p>
         </section>
       </section> <!-- End #about -->
-      <section id="adopting" class="py-3 border-top py-sm-6 px-sm-3">
+      <section id="adopting" class="py-3 border-top py-sm-6 px-sm-3 px-md-6">
         <h2 class="text-center mb-4 text-capitalize">Adopting with Paws</h2>
-        <div class="adopt-img-group d-none d-sm-flex justify-content-between mx-auto my-6">
+        <div class="d-none d-sm-flex justify-content-between px-2 my-5 px-md-5 px-lg-6">
           <img src="images/png/dog1.png" alt="Dog with a bone" width="158" height="121">
           <img src="images/png/dog2.png" alt="Smiling dog with wagging tail" width="135" height="184">
           <img src="images/png/dog3.png" alt="Smiling dog with tilted head and a collar" width="166" height="135">
@@ -65,7 +65,7 @@
       </section><!-- End #adopting -->
       <section id="locations" class="py-3 px-2 px-sm-4 border-top py-sm-6 px-sm-5">
         <h2 class="text-center text-capitalize">Paws locations near you</h2>
-        <img src="images/png/locationservices.png" alt="" class="locations-map w-100 h-100 d-block my-4" width="810"
+        <img src="images/png/locationservices.png" alt="" class="w-100 h-100 d-block my-4" width="810"
           height="366">
         <div class="mx-sm-2 position-relative">
           <input class="location-search form-control shadow-sm mb-3 px-3 py-4" type="text" name="location-search" id="location-search"
@@ -76,8 +76,8 @@
 
       </section><!-- End #locations -->
       <section id="contact" class="py-3 border-top py-sm-6 px-sm-3">
-        <h2 class="text-center text-capitalize mb-5">Contact us</h2>
-        <form class="d-flex flex-column px-2 px-sm-0 mx-auto" style="max-width: 497px;">
+        <h2 class="text-center text-capitalize mb-sm-5">Contact us</h2>
+        <form class="contact-form d-flex flex-column px-2 px-sm-0 mx-auto" style="max-width: 497px;">
           <label for="user-name" class="sr-only">Your full name</label>
           <input class="shadow-sm d-block mb-4 border-0 py-2 px-3" type="text" name="user-name" id="user-name"
             placeholder="First and last name">
@@ -89,7 +89,7 @@
           <textarea class="shadow-sm d-block mb-4 border-0 py-2 px-3" name="user-message" id="user-message" cols="30" rows="10"
             placeholder="Your message..."></textarea>
 
-          <button type="submit" class="btn btn-primary align-self-md-start py-1 px-md-5">Send</button>
+          <button type="submit" class="btn btn-primary align-self-sm-start py-1 px-sm-5">Send</button>
         </form>
       </section><!-- End #contact -->
     </main>

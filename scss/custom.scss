@@ -63,3 +63,41 @@ textarea {
   right: 24px;
   width: 20px;
 }
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    position: absolute;
+  }
+
+  @media (min-width: 576px) {
+    &:before {
+      content: url(images/png/cat1.png);
+      top: -98px;
+      left: -25px;
+      z-index: -1;
+    }
+
+    &:after {
+      content: url(images/png/cat2.png);
+      bottom: -29px;
+      right: -9px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &:before {
+      top:-100px;
+      left: -60px;
+    }
+
+    &:after {
+      right: -104px;
+    }
+    
+  }
+  
+}

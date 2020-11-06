@@ -1,5 +1,5 @@
 {
-  "name": "{project-name}",
+  "name": "paws-bootstrap",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TylerAPfledderer/{project-name}.git"
+    "url": "git+https://github.com/TylerAPfledderer/paws-bootstrap.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TylerAPfledderer/{project-name}/issues"
+    "url": "https://github.com/TylerAPfledderer/paws-bootstrap/issues"
   },
-  "homepage": "https://github.com/TylerAPfledderer/{project-name}#readme",
+  "homepage": "https://github.com/TylerAPfledderer/paws-bootstrap#readme",
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "browser-sync": "^2.26.13",

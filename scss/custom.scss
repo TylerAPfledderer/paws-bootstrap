@@ -3,4 +3,42 @@
 // ----------------------- //
 
 @forward '../bootstrap/bootstrap.scss';
+@use 'sass:color';
+// -- Variable -- //
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+$brand-color: #ff99ad;
+$bg-color: #f8f8f8;
+
+
+
+.btn {
+  border: none;
+
+  &-primary {
+    background-color: $brand-color;
+
+    &:hover,
+    &:focus {
+      background-color: darken($brand-color, 15%);
+    }
+
+    &:active {
+      background-color: adjust-color($brand-color, $saturation: 70%) !important;
+    }
+  }
+
+  &-secondary {
+    background: none;
+    border: 2px solid $brand-color;
+    color: #454545;
+
+    &:hover,
+    &:focus {
+      background-color: adjust-color($brand-color, $alpha: -0.7);
+      border-color: adjust-color($brand-color, $alpha: -0.5);
+      color: inherit;
+    }
+  }
+}
